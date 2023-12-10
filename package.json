@@ -1,16 +1,20 @@
 {
+  "homepage": "https://naik1994.github.io/face-recognition-brain-api-sample",
   "name": "smart-brain-api",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
     "test": "jest",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "gh-pages": "^6.1.0",
     "jest": "^26.6.3",
     "nodemon": "^2.0.2"
   },
