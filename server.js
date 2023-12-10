@@ -28,6 +28,7 @@ const database = {
 }
 
 app.get('/', (req, resp) => {
+	console.log("inside get")
 	resp.json(database.users);
 });
 
@@ -99,4 +100,4 @@ app.put('/image', (req, resp) => {
 	}
 });
 
-app.listen(3001, () => console.log("app is running on port 3000"));
+app.listen(3001, () => console.log("app is running on port 3001"));
